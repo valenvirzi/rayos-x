@@ -4,9 +4,10 @@ const NotFoundPage = () => {
   return (
     <main>
       <div>
-        <h1>Error 404 Page Not Found</h1>
+        <h1>Error 404</h1>
+        <p>La página no ha sido encontrada</p>
       </div>
-      <Link to="/">Go back to Home Page</Link>
+      <Link to="/">Volver al Inicio</Link>
     </main>
   );
 };
