@@ -9,6 +9,7 @@ import SobreNosotros from "./pages/SobreNosotros.jsx";
 import Distribuidores from "./pages/Distribuidores.jsx";
 import ServicioTecnico from "./pages/ServicioTecnico.jsx";
 import Contacto from "./pages/Contacto.jsx";
+import Home from "./pages/Home.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             element: <h2>Equipamientos Details</h2>,
           },
         ],
+      },
+      {
+        path: "/",
+        element: <Home />,
       },
       {
         path: "/Sobre-nosotros",

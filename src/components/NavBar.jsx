@@ -6,7 +6,7 @@ export const NavBar = () => {
       <Link to="/">
         <div className="bg-black">
           <img
-            className="w-80"
+            className="w-56 2xl:w-72"
             src="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-Logoblanco.svg"
             alt="Logo Dinan S.A."
             srcSet="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-Logoblanco.svg"
@@ -17,7 +17,7 @@ export const NavBar = () => {
         <button
           type="button"
           // onPointerDown={toggleMenu}
-          className="p-4 lg:hidden"
+          className="p-4 xl:hidden"
         >
           <img
             className="w-16 min-w-16"
@@ -26,7 +26,7 @@ export const NavBar = () => {
             srcSet="https://www.svgrepo.com/show/532195/menu.svg"
           />
         </button>
-        <ul className="absolute bottom-0 right-0 top-0 z-50 flex w-11/12 flex-col gap-6 bg-red-600 p-4 pl-8 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] md:text-lg lg:hidden">
+        <ul className="absolute bottom-0 right-0 top-0 z-50 flex hidden w-10/12 flex-col gap-6 bg-red-600 p-4 pl-8 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden">
           <li className="self-end">
             <button type="button" className="">
               <img
@@ -56,23 +56,23 @@ export const NavBar = () => {
             <Link to="/Contacto">Contacto</Link>
           </li>
         </ul>
-        <ul className="hidden items-center gap-6 p-4 px-6 text-center lg:flex xl:gap-10 xl:text-lg 2xl:px-10">
-          <li>
+        <ul className="hidden items-center gap-6 p-4 px-6 text-center xl:flex xl:gap-10 2xl:px-10 2xl:text-lg">
+          <li className="min-w-fit border-red-600 hover:border-b-2">
             <Link to="/">Inicio</Link>
           </li>
-          <li>
+          <li className="min-w-fit border-red-600 hover:border-b-2">
             <Link to="/Equipamientos">Equipamientos</Link>
           </li>
-          <li>
+          <li className="min-w-fit border-red-600 hover:border-b-2">
             <Link to="/Sobre-nosotros">Sobre Nosotros</Link>
           </li>
-          <li>
+          <li className="min-w-fit border-red-600 hover:border-b-2">
             <Link to="/Distribuidores">Distribuidores</Link>
           </li>
-          <li>
+          <li className="min-w-fit border-red-600 hover:border-b-2">
             <Link to="/Servicio-tecnico">Servicio Técnico</Link>
           </li>
-          <li>
+          <li className="min-w-fit border-red-600 hover:border-b-2">
             <Link to="/Contacto">Contacto</Link>
           </li>
         </ul>
