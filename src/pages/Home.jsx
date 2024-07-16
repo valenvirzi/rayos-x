@@ -1,3 +1,6 @@
+import CategoryCard from "../components/CategoryCard";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>
@@ -60,31 +63,26 @@ const Home = () => {
           <p>Brindando la mejor relación precio/valor del mercado.</p>
         </div>
       </section>
-      <section className="flex flex-col justify-around gap-1 text-pretty py-2 md:gap-4 lg:flex-row lg:gap-1 lg:px-16 lg:py-0">
-        <ul>
-          <li>
-            <article></article>
+      <section className="flex flex-col">
+        <ul className="flex flex-col items-center gap-4 px-8">
+          <li className="w-full">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={
+                "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png"
+              }
+              categoryTitle={"Radiología"}
+            />
           </li>
-          <li>
-            <article></article>
-          </li>
-          <li>
-            <article></article>
-          </li>
-          <li>
-            <article></article>
-          </li>
-          <li>
-            <article></article>
-          </li>
-          <li>
-            <article></article>
-          </li>
-          <li>
-            <article></article>
-          </li>
-          <li>
-            <article></article>
+          <li className="w-full">
+            {/* TODO: Determinar posicion de la imagen de fondo con propiedades */}
+            <Link to={`/Equipamientos/Radiologia`} className="w-full">
+              <article
+                className={`bg- rounded-md border border-solid border-black bg-[url('./media/radiologia.png')] bg-contain bg-right bg-no-repeat p-4`}
+              >
+                <h4 className="font-medium">Radiología</h4>
+              </article>
+            </Link>
           </li>
         </ul>
       </section>
