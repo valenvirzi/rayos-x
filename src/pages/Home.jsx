@@ -1,5 +1,4 @@
 import CategoryCard from "../components/CategoryCard";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -63,26 +62,88 @@ const Home = () => {
           <p>Brindando la mejor relación precio/valor del mercado.</p>
         </div>
       </section>
-      <section className="flex flex-col">
-        <ul className="flex flex-col items-center gap-4 px-8">
-          <li className="w-full">
+      <section className="flex flex-col gap-6 px-8 py-4 md:px-16">
+        <h2 className="text-xl md:text-2xl">Equipamientos</h2>
+        <ul className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <li className="w-full md:max-w-screen-md">
             <CategoryCard
               categoryRoute={"Radiologia"}
-              imgURL={
-                "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png"
-              }
+              imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
             />
           </li>
-          <li className="w-full">
-            {/* TODO: Determinar posicion de la imagen de fondo con propiedades */}
-            <Link to={`/Equipamientos/Radiologia`} className="w-full">
-              <article
-                className={`bg- rounded-md border border-solid border-black bg-[url('./media/radiologia.png')] bg-contain bg-right bg-no-repeat p-4`}
-              >
-                <h4 className="font-medium">Radiología</h4>
-              </article>
-            </Link>
+          <li className="w-full md:max-w-screen-md">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={"./media/radiologia.png"}
+              categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
+            />
+          </li>
+          <li className="w-full md:max-w-screen-md">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={"./media/radiologia.png"}
+              categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
+            />
+          </li>
+          <li className="w-full md:max-w-screen-md">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={"./media/radiologia.png"}
+              categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
+            />
+          </li>
+          <li className="w-full md:max-w-screen-md">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={"./media/radiologia.png"}
+              categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
+            />
+          </li>
+          <li className="w-full md:max-w-screen-md">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={"./media/radiologia.png"}
+              categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
+            />
+          </li>
+          <li className="w-full md:max-w-screen-md">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={"./media/radiologia.png"}
+              categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
+            />
+          </li>
+          <li className="w-full md:max-w-screen-md">
+            <CategoryCard
+              categoryRoute={"Radiologia"}
+              imgURL={"./media/radiologia.png"}
+              categoryTitle={"Radiología"}
+              categoryDescription={
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+              }
+            />
           </li>
         </ul>
       </section>
