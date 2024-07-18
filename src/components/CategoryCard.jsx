@@ -10,12 +10,12 @@ const CategoryCard = ({
   return (
     <Link to={`/Equipamientos/${categoryRoute}`} className="w-full">
       <article
-        className={`flex items-center gap-4 rounded-md border border-solid border-black md:flex-col bg-[url('${imgURL}')] bg-contain bg-[95%_center] bg-no-repeat p-4 md:bg-none md:p-5 2xl:p-6`}
+        className={`relative flex items-center gap-4 overflow-hidden rounded-md border border-solid border-black p-4 md:flex-col md:p-5 2xl:p-6`}
       >
         <img
           src={imgURL}
           alt={`Imagen ${categoryTitle}`}
-          className="hidden md:inline-block md:w-2/4"
+          className="absolute bottom-0 right-1 top-0 max-h-full md:static md:w-2/4"
         />
         <div className="flex w-full flex-col gap-4">
           <h4 className="font-medium md:text-lg 3xl:text-xl">
@@ -31,9 +31,9 @@ const CategoryCard = ({
 };
 
 CategoryCard.propTypes = {
-  categoryRoute: PropTypes.string,
-  imgURL: PropTypes.string,
-  categoryTitle: PropTypes.string,
+  categoryRoute: PropTypes.string.isRequired,
+  imgURL: PropTypes.string.isRequired,
+  categoryTitle: PropTypes.string.isRequired,
   categoryDescription: PropTypes.string,
 };
 

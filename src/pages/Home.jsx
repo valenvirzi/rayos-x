@@ -3,7 +3,6 @@ import CategoryCard from "../components/CategoryCard";
 const Home = () => {
   return (
     <div>
-      <h2>Home</h2>
       <section className="relative bg-[url('https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/medical-tests/hero/x-ray-skeleton-2x.jpg?h=1112&iar=0&w=2880&rev=19ea35630f8b41c8b521fe2ebb675978&hash=AE57FC897A6C201A9DC3E637BE6A3C1D')] bg-cover bg-no-repeat px-8 py-6 font-semibold text-white before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:bg-black before:opacity-65 before:content-[''] md:px-16 md:py-8 xl:py-10 2xl:py-14">
         <div className="relative z-10 flex flex-col gap-4 md:gap-6">
           {/* <h2 className="text-xl md:text-2xl">RAYOS X DINAN</h2> */}
