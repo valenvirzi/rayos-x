@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <div className="flex items-center justify-between gap-4">
-      <Link to="/">
-        <div className="bg-black">
+    <div className="sticky top-0 flex items-center justify-between gap-4 bg-indigo-800 text-white xl:py-1">
+      <Link to="/" className="xl:w-2/12 xl:max-w-72">
+        <div className="">
           <img
             className="w-56 2xl:w-72"
             src="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-Logoblanco.svg"
@@ -20,7 +20,7 @@ export const NavBar = () => {
           className="p-4 xl:hidden"
         >
           <img
-            className="w-16 min-w-16"
+            className="w-14"
             src="https://www.svgrepo.com/show/532195/menu.svg"
             alt="Menu icon"
             srcSet="https://www.svgrepo.com/show/532195/menu.svg"
@@ -56,7 +56,7 @@ export const NavBar = () => {
             <Link to="/Contacto">Contacto</Link>
           </li>
         </ul>
-        <ul className="hidden items-center gap-6 p-4 px-6 text-center xl:flex xl:gap-10 2xl:px-10 2xl:text-lg">
+        <ul className="hidden items-center gap-6 p-4 px-6 text-center xl:flex 2xl:px-10 2xl:text-lg">
           <li className="min-w-fit border-red-600 hover:border-b-2">
             <Link to="/">Inicio</Link>
           </li>

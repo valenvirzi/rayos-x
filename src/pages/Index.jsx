@@ -3,7 +3,7 @@ import { NavBar } from "../components/NavBar";
 
 const Index = () => {
   return (
-    <main>
+    <main className="">
       <NavBar />
       <Outlet />
     </main>
