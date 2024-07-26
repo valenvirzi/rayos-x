@@ -9,7 +9,7 @@ const SobreNosotros = () => {
             className="lg:hidden"
           />
         </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-8 lg:flex-1 lg:self-center 2xl:gap-6">
+        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">
             Nuestra Empresa
           </h2>
@@ -34,7 +34,7 @@ const SobreNosotros = () => {
             className="lg:hidden"
           />
         </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-8 lg:flex-1 lg:self-center 2xl:gap-6">
+        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">Inversión</h2>
           <p className="text-sm md:text-base 2xl:text-lg">
             Invertimos día a día en investigación y desarrollo manteniendo
@@ -56,7 +56,7 @@ const SobreNosotros = () => {
             className="lg:hidden"
           />
         </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-8 lg:flex-1 lg:self-center 2xl:gap-6">
+        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">Servicio</h2>
           <p className="text-sm md:text-base 2xl:text-lg">
             Poseemos una amplia y eficiente red de atención y servicio técnico
@@ -79,7 +79,7 @@ const SobreNosotros = () => {
             className="lg:hidden"
           />
         </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-8 lg:flex-1 lg:self-center 2xl:gap-6">
+        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">
             Tecnología
           </h2>
@@ -95,11 +95,11 @@ const SobreNosotros = () => {
         </div>
       </section>
       <section className="flex flex-col lg:flex-row">
-        <div className="flex flex-col gap-3 px-8 py-6 md:gap-6 md:px-16 md:py-8 lg:flex-1 lg:px-8 xl:px-10 2xl:px-16">
+        <div className="flex flex-col gap-4 px-8 py-6 md:gap-6 md:px-16 md:py-8 lg:flex-1 lg:px-8 xl:px-10 2xl:px-16 2xl:py-10">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">
             Política de Calidad
           </h2>
-          <ul className="flex list-disc flex-col gap-2 text-sm md:text-base 2xl:text-lg">
+          <ul className="ml-2 flex list-disc flex-col gap-2 text-sm md:gap-4 md:text-base lg:ml-6 2xl:text-lg">
             <li>
               Desarrollar, producir, comercializar, instalar y brindar servicio
               técnico para que nuestros productos sean seguros y eficaces.
@@ -127,16 +127,16 @@ const SobreNosotros = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:gap-6 md:px-16 md:py-8 lg:flex-1 lg:px-8 xl:px-10 2xl:px-16">
+        <div className="flex flex-col gap-4 px-8 py-6 md:gap-6 md:px-16 md:py-8 lg:flex-1 lg:px-8 xl:px-10 2xl:px-16 2xl:py-10">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">
             Certificaciones
           </h2>
-          <div className="flex flex-col gap-6">
+          <div className="flex h-full flex-col justify-between gap-6">
             <ul className="mb-2 flex flex-col items-center gap-6">
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border p-2 text-center hover:bg-black hover:text-white xl:p-4"
+                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">ISO 13485 IQNET</span>
                 </a>
@@ -144,7 +144,7 @@ const SobreNosotros = () => {
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border p-2 text-center hover:bg-black hover:text-white xl:p-4"
+                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">ISO 13485 Rina</span>
                 </a>
@@ -152,7 +152,7 @@ const SobreNosotros = () => {
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border p-2 text-center hover:bg-black hover:text-white xl:p-4"
+                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 px-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">HABILITACIÓN ANMAT</span>
                 </a>
@@ -160,7 +160,7 @@ const SobreNosotros = () => {
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border p-2 text-center hover:bg-black hover:text-white xl:p-4"
+                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">BUENAS PRÁCTICAS</span>
                 </a>
