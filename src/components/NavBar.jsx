@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <div className="sticky top-0 flex items-center justify-between gap-4 bg-indigo-800 text-white xl:py-1">
+    <div className="sticky top-0 z-50 flex items-center justify-between gap-4 bg-indigo-800 text-white xl:py-1">
       <Link to="/" className="xl:w-2/12 xl:max-w-72">
         <div className="">
           <img

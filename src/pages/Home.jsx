@@ -23,7 +23,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <section className="flex flex-col gap-6 px-8 py-6 md:px-16">
+      <section className="flex flex-col gap-6 px-8 py-6 md:px-16 xl:py-8 2xl:py-10">
         <h2 className="text-xl font-semibold md:text-2xl">Equipamientos</h2>
         <ul className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           <li className="w-full md:max-w-screen-md">
