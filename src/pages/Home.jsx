@@ -12,12 +12,12 @@ const Home = () => {
             srcSet="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-Logoblanco.svg"
           />
           <p className="max-w-xl text-pretty md:text-xl md:leading-relaxed 2xl:text-2xl 2xl:leading-relaxed">
-            Fabricando y desarrollando equipos de rayos x con tecnología propia
+            Fabricando y desarrollando equipos de rayos X con tecnología propia
             bajo los más altos estándares de calidad, desde hace 50 años.
           </p>
           <button
             type="button"
-            className="mt-1 max-w-96 rounded-md border-none bg-red-600 p-3 md:p-4 md:text-xl 2xl:mt-4"
+            className="mt-1 max-w-96 rounded-md border-none bg-indigo-800 p-3 hover:bg-indigo-600 md:p-4 md:text-xl 2xl:mt-4"
           >
             <span>Ver catálogo</span>
           </button>

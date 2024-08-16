@@ -1,42 +1,45 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <div className="sticky top-0 z-50 flex items-center justify-between gap-4 bg-indigo-800 text-white xl:py-1">
       <Link to="/" className="xl:w-2/12 xl:max-w-72">
-        <div className="">
+        <div className="p-3 xl:p-0">
           <img
-            className="w-56 2xl:w-72"
+            className="hidden w-56 xl:inline-block 2xl:w-72"
             src="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-Logoblanco.svg"
             alt="Logo Dinan S.A."
             srcSet="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-Logoblanco.svg"
+          />
+          <img
+            src="./media/logo-name.png"
+            alt="Nombre logo"
+            className="w-32 xl:hidden"
+            srcSet="./media/logo-name.png"
           />
         </div>
       </Link>
       <nav className="flex items-center font-semibold">
         <button
           type="button"
-          // onPointerDown={toggleMenu}
-          className="p-4 xl:hidden"
+          onPointerDown={toggleMenu}
+          className="z-50 p-4 xl:hidden"
         >
           <img
-            className="w-14"
-            src="https://www.svgrepo.com/show/532195/menu.svg"
+            className={`w-14 ${menuOpen ? "rotate-90" : ""} transition-transform`}
+            src="./media/logo-icon.png"
             alt="Menu icon"
-            srcSet="https://www.svgrepo.com/show/532195/menu.svg"
+            srcSet="./media/logo-icon.png"
           />
         </button>
-        <ul className="absolute bottom-0 right-0 top-0 z-50 flex hidden w-10/12 flex-col gap-6 bg-red-600 p-4 pl-8 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden">
-          <li className="self-end">
-            <button type="button" className="">
-              <img
-                className="w-16 min-w-16"
-                src="https://www.svgrepo.com/show/503004/close.svg"
-                alt="Menu icon"
-                srcSet="https://www.svgrepo.com/show/503004/close.svg"
-              />
-            </button>
-          </li>
+        <ul
+          className={`absolute ${menuOpen ? "flex translate-x-0" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col gap-6 bg-indigo-800 p-4 pl-8 pt-24 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] transition-transform md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden`}
+        >
           <li>
             <Link to="/">Inicio</Link>
           </li>

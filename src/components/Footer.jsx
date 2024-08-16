@@ -1,28 +1,76 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const Footer = () => {
   {
     /* TODO: Hacer Footer */
   }
   return (
-    <footer className="flex flex-col bg-indigo-800 px-8 py-6 text-white">
-      <div className="flex flex-col gap-4">
-        <div className="flex items-start gap-2">
+    <footer className="flex flex-col gap-4 bg-indigo-800 px-8 py-6 text-white">
+      <div className="flex flex-col items-center gap-4">
+        <div className="flex items-center gap-2">
           <img
-            className="w-16"
-            src="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-iso-Blanco.svg"
+            className="w-56"
+            src="https://rayosxdinan.com.ar/wp-content/uploads/2021/04/Rayos-Dinan-Logoblanco.svg"
             alt="icono empresa"
           />
-          <p className="text-pretty text-sm">
+          {/* <p className="text-pretty text-sm">
             Diseño, Desarrollo y Fabricación de equipos de rayos X con
             tecnología propia bajo los{" "}
             <span className="font-semibold">
               más altos estándares de calidad
             </span>
             .
-          </p>
+          </p> */}
         </div>
-        <div className="">
+        <div className="flex flex-col items-center gap-3 text-sm">
+          <div className="flex items-center gap-2">
+            <h4 className="text-base">Links destacados</h4>
+            <img
+              src="./media/arrow-down.svg"
+              alt=""
+              className="w-6 animate-bounce"
+            />
+          </div>
+          <ul className="flex flex-col items-center gap-2">
+            <li>
+              <a href="" className="flex items-center gap-2">
+                <img
+                  src="./media/location-pin.svg"
+                  alt="Ubicación"
+                  className="w-6"
+                />
+                <div className="flex flex-col items-center">
+                  <p>Bolonia 5329</p>
+                  <p>CABA, Argentina</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+5491145677543" className="flex items-center gap-2">
+                <img
+                  src="./media/location-pin.svg"
+                  alt="Ubicación"
+                  className="w-6"
+                />
+                <p>+54 9 11-4567-7543</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:rxdinan@rayosxdinan.com.ar"
+                className="flex items-center gap-2"
+              >
+                <img
+                  src="./media/location-pin.svg"
+                  alt="Ubicación"
+                  className="w-6"
+                />
+                <p>rxdinan@rayosxdinan.com.ar</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        {/* <div className="">
           <ul className="flex flex-col items-center gap-2">
             <li>
               <Link>Política de Privacidad</Link>
@@ -34,32 +82,13 @@ export const Footer = () => {
               <Link>Cómo Llegar</Link>
             </li>
           </ul>
-        </div>
-        <div className="">
-          <ul className="flex flex-col items-center gap-2">
-            <li>
-              <a href="" className="flex flex-col items-center">
-                <img src="" alt="" />
-                <p>Bolonia 5329</p>
-                <p>CABA, Argentina</p>
-              </a>
-            </li>
-            <li>
-              <a href="tel:+5491145677543">
-                <img src="" alt="" />
-                <p>+5491145677543</p>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:rxdinan@rayosxdinan.com.ar">
-                <img src="" alt="" />
-                <p>rxdinan@rayosxdinan.com.ar</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+        </div> */}
       </div>
-      <div className=""></div>
+      <div className="">
+        <p className="text-center text-sm">
+          Todos los derechos reservados © 2024 Rayos X Dinan S.A.
+        </p>
+      </div>
     </footer>
   );
 };
