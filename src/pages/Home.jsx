@@ -32,7 +32,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
@@ -42,7 +42,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
@@ -52,7 +52,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
@@ -62,7 +62,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
@@ -72,7 +72,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
@@ -82,7 +82,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
@@ -92,7 +92,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
@@ -102,7 +102,7 @@ const Home = () => {
               imgURL={"./media/radiologia.png"}
               categoryTitle={"Radiología"}
               categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia, Puestos de trabajo."
+                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
               }
             />
           </li>
