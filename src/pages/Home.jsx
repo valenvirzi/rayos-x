@@ -1,6 +1,9 @@
 import CategoryCard from "../components/CategoryCard";
 
 const Home = () => {
+  // TODO: Hacer que las cateogrias saquen la info correspondiente para cada tarjeta (CategoryCard Properties) para que no sean todas iguales como lo son ahora.
+  // TODO: Poner las certificaciones adecuadas que tiene la pagina original.
+
   return (
     <div>
       <section className="relative bg-[url('https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/medical-tests/hero/x-ray-skeleton-2x.jpg?h=1112&iar=0&w=2880&rev=19ea35630f8b41c8b521fe2ebb675978&hash=AE57FC897A6C201A9DC3E637BE6A3C1D')] bg-cover bg-no-repeat px-8 py-6 font-semibold text-white before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:bg-black before:opacity-65 before:content-[''] md:px-16 md:py-8 xl:py-10 2xl:py-14">
