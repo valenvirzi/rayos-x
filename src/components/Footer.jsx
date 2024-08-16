@@ -1,9 +1,6 @@
 // import { Link } from "react-router-dom";
 
 export const Footer = () => {
-  {
-    /* TODO: Hacer Footer */
-  }
   return (
     <footer className="flex flex-col gap-4 bg-indigo-800 px-8 py-6 text-white 2xl:px-12">
       <div className="flex flex-col items-center gap-4 xl:flex-row xl:justify-between">

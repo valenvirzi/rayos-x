@@ -7,7 +7,7 @@ export const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between gap-4 bg-indigo-800 text-white xl:py-1">
+    <div className="sticky top-0 z-50 flex items-center justify-between gap-4 bg-indigo-800 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] xl:py-1">
       <Link to="/" className="xl:w-2/12 xl:max-w-72">
         <div className="p-3 xl:p-0">
           <img
@@ -60,22 +60,22 @@ export const NavBar = () => {
           </li>
         </ul>
         <ul className="hidden items-center gap-6 p-4 px-6 text-center xl:flex 2xl:gap-10 2xl:px-10 2xl:text-lg">
-          <li className="min-w-fit border-red-600 hover:border-b-2">
+          <li className="min-w-fit border-white hover:border-b-2">
             <Link to="/">Inicio</Link>
           </li>
-          <li className="min-w-fit border-red-600 hover:border-b-2">
+          <li className="min-w-fit border-white hover:border-b-2">
             <Link to="/Equipamientos">Equipamientos</Link>
           </li>
-          <li className="min-w-fit border-red-600 hover:border-b-2">
+          <li className="min-w-fit border-white hover:border-b-2">
             <Link to="/Sobre-nosotros">Sobre Nosotros</Link>
           </li>
-          <li className="min-w-fit border-red-600 hover:border-b-2">
+          <li className="min-w-fit border-white hover:border-b-2">
             <Link to="/Distribuidores">Distribuidores</Link>
           </li>
-          <li className="min-w-fit border-red-600 hover:border-b-2">
+          <li className="min-w-fit border-white hover:border-b-2">
             <Link to="/Servicio-tecnico">Servicio Técnico</Link>
           </li>
-          <li className="min-w-fit border-red-600 hover:border-b-2">
+          <li className="min-w-fit border-white hover:border-b-2">
             <Link to="/Contacto">Contacto</Link>
           </li>
         </ul>
