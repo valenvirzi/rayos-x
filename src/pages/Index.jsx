@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 
 const Index = () => {
   return (
-    <main className="">
+    <main className="flex min-h-screen flex-col justify-between overflow-hidden">
       <NavBar />
       <Outlet />
       <Footer />
