@@ -10,7 +10,7 @@ const CategoryCard = ({
   return (
     <Link to={`/Equipamientos/${categoryRoute}`} className="w-full">
       <article
-        className={`relative flex items-center gap-4 overflow-hidden rounded-md border border-solid border-indigo-800 p-4 hover:bg-indigo-800 hover:text-white md:flex-col md:p-5 2xl:p-6`}
+        className={`relative flex items-center gap-4 overflow-hidden rounded-md border border-solid border-indigo-800 p-4 text-indigo-950 hover:bg-indigo-800 hover:text-white md:flex-col md:p-5 2xl:p-6`}
       >
         <img
           src={imgURL}

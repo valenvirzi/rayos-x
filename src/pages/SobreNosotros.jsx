@@ -1,99 +1,55 @@
+import SectionAbout from "../components/SectionAbout";
+
 const SobreNosotros = () => {
+  const AboutList = [
+    {
+      id: 1,
+      title: "Nuestra Empresa",
+      imgRoute: "./media/fabrica-dinan.jpg",
+      para1:
+        "Somos Rayos x Dinan, una empresa Argentina, situada en la ciudad de Buenos Aires que inició sus actividades en el año 1971 dedicándose al diseño, desarrollo y fabricación de equipos de rayos x con tecnología propia.",
+      para2:
+        "Desde nuestros inicios hemos instalado equipamientos en nuestro país, Bolivia, Brasil, Chile, China, Colombia, Cuba, Perú, Ecuador, Italia, México, Panamá, Rusia, Uruguay y Estados Unidos.",
+    },
+    {
+      id: 2,
+      title: "Inversión",
+      imgRoute: "./media/fabrica-dinan-trabajando.jpg",
+      para1:
+        "Invertimos día a día en investigación y desarrollo manteniendo nuestros productos en el más alto nivel tecnológico.",
+      para2:
+        "Dichos equipos se fabrican con la meta de buscar las mejores opciones en productos médicos para diferentes países con el fin de responder a las crecientes necesidades que se presentan en el mercado.",
+    },
+    {
+      id: 3,
+      title: "Servicio",
+      imgRoute: "./media/fabrica-dinan-adentro.jpg",
+      para1:
+        "Poseemos una amplia y eficiente red de atención y servicio técnico especializado en el país, Latinoamérica y Estados Unidos brindando un rápido soporte y asistencia total.",
+      para2:
+        "Este servicio se efectúa para todo el conjunto de unidades de radiología y de alta complejidad, con velocidad de respuesta y con lo que es más importante aún: una excelente y esmerada calidad de atención.",
+    },
+    {
+      id: 4,
+      title: "Tecnología",
+      imgRoute: "./media/fabrica-dinan-camion.jpg",
+      para1:
+        "Fabricamos nuestros equipos con material de primera calidad y tecnología propia cumpliendo los más altos estándares de calidad exigidos.",
+      para2:
+        "Esto nos permite brindar a nuestros Clientes la mejor relación precio-valor existente en el mercado.",
+    },
+  ];
   return (
     <div className="flex flex-col text-pretty">
-      <section className="flex flex-col lg:min-h-96 lg:flex-row-reverse">
-        <div className="bg-[url('https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat lg:flex-1">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="stock img"
-            className="lg:hidden"
-          />
-        </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
-          <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">
-            Nuestra Empresa
-          </h2>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Somos Rayos x Dinan, una empresa Argentina, situada en la ciudad de
-            Buenos Aires que inició sus actividades en el año 1971 dedicándose
-            al diseño, desarrollo y fabricación de equipos de rayos x con
-            tecnología propia.
-          </p>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Desde nuestros inicios hemos instalado equipamientos en nuestro
-            país, Bolivia, Brasil, Chile, China, Colombia, Cuba, Perú, Ecuador,
-            Italia, México, Panamá, Rusia, Uruguay y Estados Unidos.
-          </p>
-        </div>
-      </section>
-      <section className="flex flex-col bg-indigo-800 text-white lg:min-h-96 lg:flex-row">
-        <div className="bg-[url('https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat lg:flex-1">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="stock img"
-            className="lg:hidden"
-          />
-        </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
-          <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">Inversión</h2>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Invertimos día a día en investigación y desarrollo manteniendo
-            nuestros productos en el más alto nivel tecnológico.
-          </p>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Dichos equipos se fabrican con la meta de buscar las mejores
-            opciones en productos médicos para diferentes países con el fin de
-            responder a las crecientes necesidades que se presentan en el
-            mercado.
-          </p>
-        </div>
-      </section>
-      <section className="flex flex-col lg:min-h-96 lg:flex-row-reverse">
-        <div className="bg-[url('https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat lg:flex-1">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="stock img"
-            className="lg:hidden"
-          />
-        </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
-          <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">Servicio</h2>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Poseemos una amplia y eficiente red de atención y servicio técnico
-            especializado en el país, Latinoamérica y Estados Unidos brindando
-            un rápido soporte y asistencia total.
-          </p>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Este servicio se efectúa para todo el conjunto de unidades de
-            radiología y de alta complejidad, con velocidad de respuesta y con
-            lo que es más importante aún: una excelente y esmerada calidad de
-            atención.
-          </p>
-        </div>
-      </section>
-      <section className="flex flex-col bg-indigo-800 text-white lg:min-h-96 lg:flex-row">
-        <div className="bg-[url('https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat lg:flex-1">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1675686363399-91ad6111f82d?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="stock img"
-            className="lg:hidden"
-          />
-        </div>
-        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6">
-          <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">
-            Tecnología
-          </h2>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Fabricamos nuestros equipos con material de primera calidad y
-            tecnología propia cumpliendo los más altos estándares de calidad
-            exigidos.
-          </p>
-          <p className="text-sm md:text-base 2xl:text-lg">
-            Esto nos permite brindar a nuestros Clientes la mejor relación
-            precio-valor existente en el mercado.
-          </p>
-        </div>
-      </section>
+      {AboutList.map((section) => (
+        <SectionAbout
+          key={section.id}
+          sectionImgRoute={section.imgRoute}
+          sectionTitle={section.title}
+          sectionPara1={section.para1}
+          sectionPara2={section.para2}
+        />
+      ))}
       <section className="flex flex-col lg:flex-row">
         <div className="flex flex-col gap-4 px-8 py-6 md:gap-6 md:px-16 md:py-8 lg:flex-1 lg:px-8 xl:px-10 2xl:px-16 2xl:py-10">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">

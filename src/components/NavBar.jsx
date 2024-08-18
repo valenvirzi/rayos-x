@@ -38,7 +38,7 @@ export const NavBar = () => {
           />
         </button>
         <ul
-          className={`absolute ${menuOpen ? "flex translate-x-1" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col gap-6 bg-indigo-800 p-4 pl-8 pt-24 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] transition-transform md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden`}
+          className={`absolute ${menuOpen ? "flex max-xl:translate-x-0" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col gap-6 bg-indigo-800 p-4 pl-8 pt-24 shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] transition-transform md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden`}
         >
           <li>
             <Link to="/">Inicio</Link>

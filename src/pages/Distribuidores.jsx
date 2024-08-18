@@ -78,7 +78,7 @@ const Distribuidores = () => {
       address: "",
       location: "",
       zone: "URUGUAY",
-      website: "",
+      website: "www.loduca.com.uy",
     },
   ];
   return (
