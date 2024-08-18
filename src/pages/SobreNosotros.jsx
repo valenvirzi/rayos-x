@@ -1,6 +1,7 @@
 import SectionAbout from "../components/SectionAbout";
 
 const SobreNosotros = () => {
+  // TODO: Optimizar imagenes para mejor renderizado
   const AboutList = [
     {
       id: 1,
