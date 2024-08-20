@@ -1,7 +1,7 @@
 import CategoryCard from "../components/CategoryCard";
 
 const Home = () => {
-  // TODO: Hacer que las cateogrias saquen la info correspondiente para cada tarjeta (CategoryCard Properties) para que no sean todas iguales como lo son ahora.
+  // TODO: Buscar las imagenes correctas para cada categoría.
   // TODO: Poner las certificaciones adecuadas que tiene la pagina original.
   const CategoryList = [
     {
