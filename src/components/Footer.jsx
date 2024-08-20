@@ -11,21 +11,18 @@ export const Footer = () => {
             alt="icono empresa"
           />
         </div>
-        <div className="flex flex-col items-center gap-3 text-sm xl:items-end">
-          <div className="flex items-center gap-2">
-            <h4 className="text-base">Links destacados</h4>
-            <img
+        <div className="flex flex-col items-center gap-3 text-sm xl:items-start">
+          <div className="flex items-center gap-2 border-l-4 border-solid border-white pl-2">
+            <h4 className="text-base font-semibold">Contactanos</h4>
+            {/* <img
               src="./media/arrow-down.svg"
               alt=""
               className="w-6 animate-bounce"
-            />
+            /> */}
           </div>
-          <ul className="flex flex-col items-center gap-2 xl:items-end xl:gap-3">
+          <ul className="flex flex-col items-center gap-2 xl:items-start xl:gap-3">
             <li>
-              <a
-                href=""
-                className="flex items-center gap-2 xl:flex-row-reverse"
-              >
+              <a href="" className="flex items-center gap-2">
                 <img
                   src="./media/location-pin.svg"
                   alt="Ubicación"
@@ -38,10 +35,7 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="tel:+5491145677543"
-                className="flex items-center gap-2 xl:flex-row-reverse"
-              >
+              <a href="tel:+5491145677543" className="flex items-center gap-2">
                 <img
                   src="./media/whatsapp-logo.svg"
                   alt="WhatsApp"
@@ -53,7 +47,7 @@ export const Footer = () => {
             <li>
               <a
                 href="mailto:rxdinan@rayosxdinan.com.ar"
-                className="flex items-center gap-2 xl:flex-row-reverse"
+                className="flex items-center gap-2"
               >
                 <img src="./media/mail-icon.svg" alt="Email" className="w-6" />
                 <p>rxdinan@rayosxdinan.com.ar</p>

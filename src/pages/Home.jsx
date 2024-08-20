@@ -3,7 +3,53 @@ import CategoryCard from "../components/CategoryCard";
 const Home = () => {
   // TODO: Hacer que las cateogrias saquen la info correspondiente para cada tarjeta (CategoryCard Properties) para que no sean todas iguales como lo son ahora.
   // TODO: Poner las certificaciones adecuadas que tiene la pagina original.
-
+  const CategoryList = [
+    {
+      title: "Radiología",
+      imgURL: "./media/radiologia.png",
+      route: "Radiologia",
+      description:
+        "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia.",
+    },
+    {
+      title: "Cirugía",
+      imgURL: "",
+      route: "Cirugia",
+      description:
+        "Mesas porta-paciente con arco en C, equipo móvil de radioscopía televisada con soporte en C.",
+    },
+    {
+      title: "Mamografía",
+      imgURL: "",
+      route: "Mamografia",
+      description: "Equipos mamográficos.",
+    },
+    {
+      title: "Digitalización de Imágenes",
+      imgURL: "",
+      route: "Digitalizacion-de-imagenes",
+      description: "",
+    },
+    {
+      title: "Telecomandado",
+      imgURL: "",
+      route: "Telecomandado",
+      description: "Mesa telecomandada.",
+    },
+    {
+      title: "Angiografía Digital",
+      imgURL: "",
+      route: "Angiografia-digital",
+      description: "Equipos de Angiografía digital.",
+    },
+    {
+      title: "Veterinaria",
+      imgURL: "",
+      route: "Veterinaria",
+      description:
+        "Equipos portátiles y Generadores de rayos X de alta frecuencia.",
+    },
+  ];
   return (
     <div>
       <section className="relative bg-[url('https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/medical-tests/hero/x-ray-skeleton-2x.jpg?h=1112&iar=0&w=2880&rev=19ea35630f8b41c8b521fe2ebb675978&hash=AE57FC897A6C201A9DC3E637BE6A3C1D')] bg-cover bg-no-repeat px-8 py-6 font-semibold text-white before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:bg-black before:opacity-65 before:content-[''] md:px-16 md:py-8 xl:py-10 2xl:py-14">
@@ -30,86 +76,19 @@ const Home = () => {
         <h2 className="text-xl font-semibold md:text-2xl">Equipamientos</h2>
         {/* TODO: Pensar una mejor manera de presentar las categorias, quizas un flip en la tarjeta */}
         <ul className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
-          <li className="w-full md:max-w-screen-md">
-            <CategoryCard
-              categoryRoute={"Radiologia"}
-              imgURL={"./media/radiologia.png"}
-              categoryTitle={"Radiología"}
-              categoryDescription={
-                "Equipos portátiles y móviles, Comandos digitales, generadores de rayos X de alta frecuencia."
-              }
-            />
-          </li>
+          {CategoryList.map((category, index) => (
+            <li
+              key={index}
+              className="w-full rounded-md shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)] md:max-w-screen-md"
+            >
+              <CategoryCard
+                categoryRoute={category.route}
+                imgURL={category.imgURL}
+                categoryTitle={category.title}
+                categoryDescription={category.description}
+              />
+            </li>
+          ))}
         </ul>
       </section>
       <section className="flex flex-col items-center justify-around gap-1 text-pretty py-2 md:gap-4 lg:flex-col lg:gap-1 lg:px-16 lg:py-0">
