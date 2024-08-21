@@ -13,38 +13,38 @@ const Home = () => {
     },
     {
       title: "Cirugía",
-      imgURL: "",
+      imgURL: "./media/radiologia.png",
       route: "Cirugia",
       description:
         "Mesas porta-paciente con arco en C, equipo móvil de radioscopía televisada con soporte en C.",
     },
     {
       title: "Mamografía",
-      imgURL: "",
+      imgURL: "./media/radiologia.png",
       route: "Mamografia",
       description: "Equipos mamográficos.",
     },
     {
       title: "Digitalización de Imágenes",
-      imgURL: "",
+      imgURL: "./media/radiologia.png",
       route: "Digitalizacion-de-imagenes",
       description: "",
     },
     {
       title: "Telecomandado",
-      imgURL: "",
+      imgURL: "./media/radiologia.png",
       route: "Telecomandado",
       description: "Mesa telecomandada.",
     },
     {
       title: "Angiografía Digital",
-      imgURL: "",
+      imgURL: "./media/radiologia.png",
       route: "Angiografia-digital",
       description: "Equipos de Angiografía digital.",
     },
     {
       title: "Veterinaria",
-      imgURL: "",
+      imgURL: "./media/radiologia.png",
       route: "Veterinaria",
       description:
         "Equipos portátiles y Generadores de rayos X de alta frecuencia.",
@@ -66,20 +66,20 @@ const Home = () => {
           </p>
           <button
             type="button"
-            className="mt-1 max-w-96 rounded-md border-none bg-indigo-800 p-3 hover:bg-indigo-600 md:p-4 md:text-xl 2xl:mt-4"
+            className="mt-1 max-w-96 rounded-md border-none bg-indigo-800 p-3 hover:bg-indigo-700 md:p-4 md:text-xl 2xl:mt-4"
           >
             <span>Ver catálogo</span>
           </button>
         </div>
       </section>
-      <section className="flex flex-col gap-6 px-8 py-6 md:px-16 xl:py-8 2xl:py-10">
+
+      <section className="flex flex-col gap-6 bg-indigo-100 px-8 py-8 md:px-16 xl:py-10 2xl:py-12">
         <h2 className="text-xl font-semibold md:text-2xl">Equipamientos</h2>
-        {/* TODO: Pensar una mejor manera de presentar las categorias, quizas un flip en la tarjeta */}
         <ul className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           {CategoryList.map((category, index) => (
             <li
               key={index}
-              className="w-full rounded-md shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)] md:max-w-screen-md"
+              className="w-full rounded bg-white shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)] md:max-w-screen-md lg:h-full"
             >
               <CategoryCard
                 categoryRoute={category.route}

@@ -17,7 +17,7 @@ const DistributorCard = ({
   };
 
   return (
-    <article className="flex flex-col items-center justify-between gap-2 text-pretty break-words rounded-md border border-solid border-indigo-800 py-2 pr-2 shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)] max-md:w-72 md:max-w-none md:pr-4 xl:gap-4 xl:pr-6 xl:pt-6">
+    <article className="flex flex-col items-center justify-between gap-2 text-pretty break-words rounded-md border border-solid border-indigo-800 bg-white py-2 pr-2 shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)] max-md:w-72 md:max-w-none md:pr-4 xl:gap-4 xl:pr-6 xl:pt-6">
       <div className="relative right-1 flex h-full w-full max-w-full flex-col gap-4 self-start bg-gradient-to-bl from-indigo-700 to-indigo-900 p-3 text-white shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)] md:right-2 md:pl-4 xl:gap-8 xl:p-6">
         <div className="flex items-center justify-between">
           <h4 className="text-sm font-semibold xl:text-base">

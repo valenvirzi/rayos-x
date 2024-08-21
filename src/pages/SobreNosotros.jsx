@@ -51,6 +51,35 @@ const SobreNosotros = () => {
           sectionPara2={section.para2}
         />
       ))}
+      {/* Problemas al cargar los recursos visuales utilizando Background IMG. Incidencia: Ciclo de Vida de los Elementos. Abajo el elemento hardcodeado funciona, el dinamicamente creado no. */}
+      {/* <section className="flex flex-col even:bg-indigo-800 even:text-white lg:min-h-96 odd:lg:flex-row-reverse even:lg:flex-row">
+        <div
+          className={`bg-[url('./media/fabrica-dinan.jpg')] bg-cover bg-left-bottom bg-no-repeat lg:flex-1`}
+        >
+          <img
+            src={`./media/fabrica-dinan.jpg`}
+            alt="Foto Empresa"
+            className="min-w-full md:h-96 lg:hidden"
+          />
+        </div>
+        <div className="flex flex-col gap-3 px-8 py-6 md:px-16 md:py-10 lg:flex-1 lg:self-center 2xl:gap-6 2xl:py-28 3xl:gap-8">
+          <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl 3xl:text-3xl">
+            Nuestro caca
+          </h2>
+          <p className="text-sm md:text-base 2xl:text-lg">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            quidem nam neque accusantium quae? Optio aut eaque delectus animi
+            fuga laudantium non, inventore similique tenetur vitae illum iusto
+            in quia?
+          </p>
+          <p className="text-sm md:text-base 2xl:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut
+            dolorem? Labore modi repellat pariatur possimus omnis eius
+            consequatur deserunt dolore expedita ad saepe minima, distinctio
+            beatae iusto dignissimos? Soluta!
+          </p>
+        </div>
+      </section> */}
       <section className="flex flex-col lg:flex-row">
         <div className="flex flex-col gap-4 px-8 py-6 md:gap-6 md:px-16 md:py-8 lg:flex-1 lg:px-8 xl:px-10 2xl:px-16 2xl:py-10">
           <h2 className="mb-2 text-xl font-semibold 2xl:text-2xl">

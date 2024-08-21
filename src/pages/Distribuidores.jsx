@@ -83,8 +83,17 @@ const Distribuidores = () => {
   ];
   return (
     <div className="flex flex-col">
-      <h2>Distribuidores</h2>
-      <div className="grid gap-3 px-8 py-8 max-md:place-items-center max-md:px-0 lg:grid-cols-2 lg:gap-4 lg:px-16 2xl:grid-cols-3 3xl:grid-cols-4">
+      <div className="flex flex-col items-center gap-4 bg-[url('https://rayosxdinan.com.ar/wp-content/uploads/2021/05/Imagenes-Hero5.jpg')] bg-cover bg-center px-3 py-4 text-white md:px-8">
+        <h2 className="text-lg font-semibold">Distribuidores</h2>
+        <p className="text-pretty text-sm">
+          Poseemos una amplia y eficiente red de atención y servicio técnico
+          especializado en el país, Latinoamérica y Estados Unidos brindando un
+          rápido soporte y asistencia total. Velocidad de respuesta y una
+          excelente y esmerada calidad de atención.
+        </p>
+      </div>
+      {/*  bg-gradient-to-b from-[rgb(47,52,118)] to-white */}
+      <div className="grid gap-3 px-8 py-4 max-md:place-items-center max-md:px-0 md:py-8 lg:grid-cols-2 lg:gap-4 lg:px-16 2xl:grid-cols-3 3xl:grid-cols-4">
         {DistribuidoresList.map((distributor) => (
           <DistributorCard
             key={distributor.id}

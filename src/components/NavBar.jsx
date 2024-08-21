@@ -7,7 +7,7 @@ export const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between gap-4 bg-indigo-800 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] xl:py-1">
+    <div className="sticky top-0 z-50 flex items-center justify-between gap-4 bg-indigo-900 text-white shadow-[0px_5px_6px_0_rgba(0,0,0,0.3)] xl:py-1">
       <Link to="/" className="xl:w-2/12 xl:max-w-72">
         <div className="p-3 xl:p-0">
           <img
@@ -38,7 +38,7 @@ export const NavBar = () => {
           />
         </button>
         <ul
-          className={`absolute ${menuOpen ? "flex shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] max-xl:translate-x-0" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col gap-6 bg-indigo-800 p-4 pl-8 pt-24 transition-transform md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden`}
+          className={`absolute ${menuOpen ? "flex shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] max-xl:translate-x-0" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col gap-6 bg-indigo-900 p-4 pl-8 pt-24 transition-transform md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden`}
         >
           <li>
             <Link to="/">Inicio</Link>

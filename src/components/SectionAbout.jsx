@@ -7,7 +7,7 @@ const SectionAbout = ({
   sectionPara2,
 }) => {
   return (
-    <section className="flex flex-col even:bg-indigo-800 even:text-white lg:min-h-96 odd:lg:flex-row-reverse even:lg:flex-row">
+    <section className="flex flex-col even:bg-indigo-900 even:text-white lg:min-h-96 odd:lg:flex-row-reverse even:lg:flex-row">
       <div
         className={`bg-[url('${sectionImgRoute}')] bg-cover bg-left-bottom bg-no-repeat lg:flex-1`}
       >
