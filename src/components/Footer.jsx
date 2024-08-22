@@ -2,7 +2,10 @@
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col gap-4 bg-indigo-900 px-8 py-6 text-white 2xl:px-12">
+    <footer
+      id="footer"
+      className="flex flex-col gap-4 bg-indigo-900 px-8 py-6 text-white 2xl:px-12"
+    >
       <div className="flex flex-col items-center gap-4 xl:flex-row xl:justify-between">
         <div className="flex items-center gap-2 xl:self-start">
           <img

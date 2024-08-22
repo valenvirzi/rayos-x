@@ -56,7 +56,7 @@ export const NavBar = () => {
             <Link to="/Servicio-tecnico">Servicio Técnico</Link>
           </li>
           <li>
-            <Link to="/Contacto">Contacto</Link>
+            <a href="#footer">Contacto</a>
           </li>
         </ul>
         <ul className="hidden items-center gap-6 p-4 px-6 text-center xl:flex 2xl:gap-10 2xl:px-10 2xl:text-lg">
@@ -76,7 +76,7 @@ export const NavBar = () => {
             <Link to="/Servicio-tecnico">Servicio Técnico</Link>
           </li>
           <li className="min-w-fit border-white hover:border-b-2">
-            <Link to="/Contacto">Contacto</Link>
+            <a href="#footer">Contacto</a>
           </li>
         </ul>
       </nav>
