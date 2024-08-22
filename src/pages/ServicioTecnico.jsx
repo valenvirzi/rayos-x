@@ -1,81 +1,70 @@
+import Form from "../components/Form";
+
 const ServicioTecnico = () => {
   // TODO: Hacer pagina Servicio Técnico
+
   return (
-    <div className="min-h-screen">
-      <div className="flex flex-col bg-indigo-200">
-        <div className="flex flex-col gap-3 p-4 text-indigo-900">
-          <div className="border-l-4 border-solid border-indigo-900 pl-2">
-            <h4 className="text-lg font-semibold">Contactanos</h4>
+    <div className="min-h-screen bg-indigo-50 xl:flex xl:min-h-0 xl:p-16">
+      <div className="flex flex-col overflow-hidden rounded xl:m-auto xl:flex-row xl:shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)]">
+        <div className="flex flex-col gap-6 bg-indigo-200 p-4 text-indigo-900 md:px-8 md:py-6 lg:px-16 lg:py-8 xl:flex-1 xl:flex-col-reverse xl:justify-between xl:p-8">
+          <div className="flex flex-col gap-3">
+            <div className="border-l-4 border-solid border-indigo-900 pl-2">
+              <h4 className="text-lg font-semibold md:text-xl">Contactanos</h4>
+            </div>
+            <ul className="ml-4 flex flex-col gap-2 text-base font-semibold xl:items-start xl:gap-3">
+              <li>
+                <a href="" className="flex items-center gap-2">
+                  <img
+                    src="./media/location-pin-dark.svg"
+                    alt="Ubicación"
+                    className="w-6"
+                  />
+                  <div className="flex flex-col">
+                    <p>Bolonia 5329</p>
+                    <p>CABA, Argentina</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+5491145677543"
+                  className="flex items-center gap-2"
+                >
+                  <img
+                    src="./media/whatsapp-logo-dark.svg"
+                    alt="WhatsApp"
+                    className="w-6"
+                  />
+                  <p>+54 9 11-4567-7543</p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:rxdinan@rayosxdinan.com.ar"
+                  className="flex items-center gap-2"
+                >
+                  <img
+                    src="./media/mail-icon-dark.svg"
+                    alt="Email"
+                    className="w-6"
+                  />
+                  <p>rxdinan@rayosxdinan.com.ar</p>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul className="mx-auto flex flex-col gap-2 text-sm font-semibold xl:items-start xl:gap-3">
-            <li>
-              <a href="" className="flex items-center gap-2">
-                <img
-                  src="./media/location-pin-dark.svg"
-                  alt="Ubicación"
-                  className="w-6"
-                />
-                <div className="flex flex-col">
-                  <p>Bolonia 5329</p>
-                  <p>CABA, Argentina</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="tel:+5491145677543" className="flex items-center gap-2">
-                <img
-                  src="./media/whatsapp-logo-dark.svg"
-                  alt="WhatsApp"
-                  className="w-6"
-                />
-                <p>+54 9 11-4567-7543</p>
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:rxdinan@rayosxdinan.com.ar"
-                className="flex items-center gap-2"
-              >
-                <img
-                  src="./media/mail-icon-dark.svg"
-                  alt="Email"
-                  className="w-6"
-                />
-                <p>rxdinan@rayosxdinan.com.ar</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form
-          name="contactForm"
-          id="contactForm"
-          className="flex flex-col items-center gap-4 bg-white p-4"
-          action=""
-          method="get"
-        >
-          <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold">Servicio Técnico</h3>
-            <p className="text-sm">
+          <div className="flex flex-col gap-3">
+            <div className="border-l-4 border-solid border-indigo-900 pl-2">
+              <h4 className="text-lg font-semibold md:text-xl">
+                Servicio Técnico
+              </h4>
+            </div>
+            <p className="ml-4 text-base font-semibold">
               Envíanos tu consulta, responderemos a la brevedad. ¡Gracias!
             </p>
           </div>
-          <div className="flex w-full flex-col gap-1">
-            <label
-              className="text-sm font-semibold text-indigo-900"
-              htmlFor="contactForm"
-            >
-              Cliente/Institución:
-            </label>
-            <input
-              className="rounded border border-indigo-900 bg-indigo-50 px-3 py-2 focus:outline focus:outline-2 focus:outline-indigo-600"
-              placeholder="Cliente/Institución"
-              type="text"
-            />
-            <span className="text-xs text-red-600">
-              * Please enter a valid email address.
-            </span>
-          </div>
-        </form>
+        </div>
+        <Form />
       </div>
     </div>
   );
