@@ -38,25 +38,56 @@ export const NavBar = () => {
           />
         </button>
         <ul
-          className={`absolute ${menuOpen ? "flex shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] max-xl:translate-x-0" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col gap-6 bg-indigo-900 p-4 pl-8 pt-24 transition-transform md:w-8/12 md:pl-12 md:text-lg lg:w-1/2 xl:hidden`}
+          className={`absolute ${menuOpen ? "flex shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] max-xl:translate-x-0" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col bg-indigo-900 pt-24 transition-transform md:w-8/12 md:text-lg lg:w-1/2 xl:hidden`}
         >
-          <li>
-            <Link to="/">Inicio</Link>
+          {/*  className="p-4 pl-10 hover:bg-white hover:text-indigo-900" */}
+          <li className="flex">
+            <Link
+              className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"
+              to="/"
+            >
+              <span>Inicio</span>
+            </Link>
           </li>
-          <li>
-            <Link to="/Equipamientos">Equipamientos</Link>
+          <li className="flex">
+            <Link
+              className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"
+              to="/Equipamientos"
+            >
+              <span>Equipamientos</span>
+            </Link>
           </li>
-          <li>
-            <Link to="/Sobre-nosotros">Sobre Nosotros</Link>
+          <li className="flex">
+            <Link
+              className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"
+              to="/Sobre-nosotros"
+            >
+              <span>Sobre Nosotros</span>
+            </Link>
           </li>
-          <li>
-            <Link to="/Distribuidores">Distribuidores</Link>
+          <li className="flex">
+            <Link
+              className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"
+              to="/Distribuidores"
+            >
+              <span>Distribuidores</span>
+            </Link>
           </li>
-          <li>
-            <Link to="/Servicio-tecnico">Servicio Técnico</Link>
+          <li className="flex">
+            <Link
+              className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"
+              to="/Servicio-tecnico"
+            >
+              <span>Servicio Técnico</span>
+            </Link>
           </li>
-          <li>
-            <a href="#footer">Contacto</a>
+          <li className="flex">
+            <a
+              className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"
+              href="#footer"
+            >
+              <span>Contacto</span>
+            </a>
           </li>
         </ul>
         <ul className="hidden items-center gap-6 p-4 px-6 text-center xl:flex 2xl:gap-10 2xl:px-10">

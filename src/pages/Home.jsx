@@ -52,7 +52,7 @@ const Home = () => {
   ];
   return (
     <div>
-      <section className="relative bg-[url('https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/medical-tests/hero/x-ray-skeleton-2x.jpg?h=1112&iar=0&w=2880&rev=19ea35630f8b41c8b521fe2ebb675978&hash=AE57FC897A6C201A9DC3E637BE6A3C1D')] bg-cover bg-no-repeat px-8 py-6 font-semibold text-white before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:bg-black before:opacity-65 before:content-[''] md:px-16 md:py-8 xl:py-10 2xl:py-14">
+      <section className="relative bg-[url('https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/medical-tests/hero/x-ray-skeleton-2x.jpg?h=1112&iar=0&w=2880&rev=19ea35630f8b41c8b521fe2ebb675978&hash=AE57FC897A6C201A9DC3E637BE6A3C1D')] bg-cover bg-no-repeat px-8 py-6 font-semibold text-white before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:bg-black before:opacity-70 before:content-[''] md:px-16 md:py-8 xl:py-10 2xl:py-14">
         <div className="relative z-10 flex flex-col gap-4 md:gap-6">
           <img
             className="relative -left-6 max-w-md md:-left-8"
@@ -73,9 +73,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex flex-col gap-6 bg-indigo-100 px-8 py-8 md:px-16 xl:py-10 2xl:py-12">
-        <h2 className="text-xl font-semibold md:text-2xl">Equipamientos</h2>
-        <ul className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+      <section className="flex flex-col gap-6 bg-indigo-100 px-8 py-8 md:px-16 xl:gap-10 xl:py-10 2xl:py-12">
+        <h2 className="text-xl font-semibold text-indigo-900 md:text-2xl xl:text-3xl">
+          Equipamientos
+        </h2>
+        <ul className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2 lg:gap-6 xl:grid-cols-3 2xl:grid-cols-4">
           {CategoryList.map((category, index) => (
             <li
               key={index}
