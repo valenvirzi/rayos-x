@@ -40,7 +40,6 @@ export const NavBar = () => {
         <ul
           className={`absolute ${menuOpen ? "flex shadow-[-4px_0_6px_0_rgba(0,0,0,0.3)] max-xl:translate-x-0" : ""} bottom-0 right-0 top-0 z-40 h-screen w-10/12 translate-x-full flex-col bg-indigo-900 pt-24 transition-transform md:w-8/12 md:text-lg lg:w-1/2 xl:hidden`}
         >
-          {/*  className="p-4 pl-10 hover:bg-white hover:text-indigo-900" */}
           <li className="flex">
             <Link
               className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"

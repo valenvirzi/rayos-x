@@ -1,7 +1,6 @@
 import DistributorCard from "../components/DistributorCard";
 
 const Distribuidores = () => {
-  // TODO: Hacer pagina Distribuidores
   const DistribuidoresList = [
     {
       id: 1,

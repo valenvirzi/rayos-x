@@ -1,8 +1,6 @@
 import Form from "../components/Form";
 
 const ServicioTecnico = () => {
-  // TODO: Hacer pagina Servicio Técnico
-
   return (
     <div className="min-h-screen xl:flex xl:min-h-0 xl:bg-indigo-50 xl:p-16">
       <div className="flex flex-col overflow-hidden rounded xl:m-auto xl:flex-row xl:shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)]">
