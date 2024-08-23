@@ -4,7 +4,7 @@ const ServicioTecnico = () => {
   // TODO: Hacer pagina Servicio Técnico
 
   return (
-    <div className="min-h-screen bg-indigo-50 xl:flex xl:min-h-0 xl:p-16">
+    <div className="min-h-screen xl:flex xl:min-h-0 xl:bg-indigo-50 xl:p-16">
       <div className="flex flex-col overflow-hidden rounded xl:m-auto xl:flex-row xl:shadow-[3px_5px_6px_0_rgba(0,0,0,0.3)]">
         <div className="flex flex-col gap-6 bg-indigo-200 p-4 text-indigo-900 md:px-8 md:py-6 lg:px-16 lg:py-8 xl:flex-1 xl:flex-col-reverse xl:justify-between xl:p-8">
           <div className="flex flex-col gap-3">

@@ -52,7 +52,7 @@ const SobreNosotros = () => {
         />
       ))}
       {/* Problemas al cargar los recursos visuales utilizando Background IMG. Incidencia: Ciclo de Vida de los Elementos. Abajo el elemento hardcodeado funciona, el dinamicamente creado no. */}
-      {/* <section className="flex flex-col even:bg-indigo-800 even:text-white lg:min-h-96 odd:lg:flex-row-reverse even:lg:flex-row">
+      {/* <section className="flex flex-col even:bg-indigo-900 even:text-white lg:min-h-96 odd:lg:flex-row-reverse even:lg:flex-row">
         <div
           className={`bg-[url('./media/fabrica-dinan.jpg')] bg-cover bg-left-bottom bg-no-repeat lg:flex-1`}
         >
@@ -122,7 +122,7 @@ const SobreNosotros = () => {
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
+                  className="min-w-60 rounded-sm border border-indigo-900 bg-indigo-900 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-900 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">ISO 13485 IQNET</span>
                 </a>
@@ -130,7 +130,7 @@ const SobreNosotros = () => {
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
+                  className="min-w-60 rounded-sm border border-indigo-900 bg-indigo-900 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-900 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">ISO 13485 Rina</span>
                 </a>
@@ -138,7 +138,7 @@ const SobreNosotros = () => {
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 px-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
+                  className="min-w-60 rounded-sm border border-indigo-900 bg-indigo-900 px-2 py-3 text-center text-white hover:bg-white hover:text-indigo-900 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">HABILITACIÓN ANMAT</span>
                 </a>
@@ -146,7 +146,7 @@ const SobreNosotros = () => {
               <li className="flex">
                 <a
                   href=""
-                  className="min-w-60 rounded-sm border border-indigo-800 bg-indigo-800 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-800 md:w-80 md:p-4 xl:w-80"
+                  className="min-w-60 rounded-sm border border-indigo-900 bg-indigo-900 p-2 py-3 text-center text-white hover:bg-white hover:text-indigo-900 md:w-80 md:p-4 xl:w-80"
                 >
                   <span className="font-semibold">BUENAS PRÁCTICAS</span>
                 </a>
