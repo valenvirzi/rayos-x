@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Producto = () => {
-  // TODO: Hacer pagina Producto y un componente que muestre cada producto.
+  // TODO: Hacer Responsive.
+  // TODO: Hacer dinamico.
   return (
     <div className="flex w-full flex-col gap-4 text-pretty">
       <section className="flex flex-col-reverse items-center gap-2">
