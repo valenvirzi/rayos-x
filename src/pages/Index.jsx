@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 
 const Index = () => {
   return (
-    <main className="">
+    <main className="overflow-x-clip">
       <NavBar />
       <Outlet />
       <Footer />

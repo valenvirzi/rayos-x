@@ -51,9 +51,9 @@ export const NavBar = () => {
           <li className="flex">
             <Link
               className="w-full p-4 pl-10 hover:bg-white hover:text-indigo-900 md:p-5 md:pl-12"
-              to="/Equipamientos"
+              to="/Catalogo"
             >
-              <span>Equipamientos</span>
+              <span>Catálogo</span>
             </Link>
           </li>
           <li className="flex">
@@ -94,7 +94,7 @@ export const NavBar = () => {
             <Link to="/">Inicio</Link>
           </li>
           <li className="min-w-fit border-white hover:border-b-2">
-            <Link to="/Equipamientos">Equipamientos</Link>
+            <Link to="/Catalogo">Catálogo</Link>
           </li>
           <li className="min-w-fit border-white hover:border-b-2">
             <Link to="/Sobre-nosotros">Sobre Nosotros</Link>

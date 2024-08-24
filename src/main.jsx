@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Index from "./pages/Index.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
-import Equipamientos from "./pages/Equipamientos.jsx";
+import Catalogo from "./pages/Catalogo.jsx";
 import SobreNosotros from "./pages/SobreNosotros.jsx";
 import Distribuidores from "./pages/Distribuidores.jsx";
 import ServicioTecnico from "./pages/ServicioTecnico.jsx";
@@ -18,12 +18,12 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/Equipamientos",
-        element: <Equipamientos />,
+        path: "/Catalogo",
+        element: <Catalogo />,
         children: [
           {
-            path: "/Equipamientos/:equipamientosId",
-            element: <h2>Equipamientos Details</h2>,
+            path: "/Catalogo/:productoId",
+            element: <h2>Product Details</h2>,
           },
         ],
       },

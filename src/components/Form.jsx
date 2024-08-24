@@ -28,7 +28,7 @@ const Form = () => {
     <form
       name="contactForm"
       id="contactForm"
-      className="flex flex-col items-center gap-5 bg-white p-4 md:px-8 lg:px-16 lg:py-8 xl:flex-1 xl:p-8"
+      className="flex flex-col items-center gap-5 bg-white p-4 md:px-8 lg:px-16 lg:py-8 xl:flex-1 xl:rounded-r xl:border xl:border-solid xl:border-indigo-900 xl:p-8"
       action=""
       method="get"
       onSubmit={handleSubmit(onSubmit)}
@@ -132,7 +132,7 @@ const Form = () => {
                 },
               })}
               className="rounded border border-indigo-900 bg-indigo-50 px-3 py-2 focus:outline focus:outline-2 focus:outline-indigo-600"
-              placeholder="+549115333444"
+              placeholder="+5491153334444"
               minLength={10}
               maxLength={14}
               type="tel"
